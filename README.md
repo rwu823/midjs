@@ -1,4 +1,5 @@
-midjs
-=====
+# midjs
 
-A lightweight flow control for Node and Browser
+A lightweight flow control for Node and Browsers.
+
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<title>Mid.js Tests</title>
+<h1>Mid.js Tests</h1>
+
+<script src="../mid.js"></script>
+<script>
+//    var sync = Mid('sync')
+//
+//    sync
+//        .use(function (next){
+//            setTimeout(function (){
+//                console.log(11111)
+//                next('hello', 'world')
+//            }, 2000)
+//        })
+//        .use(function (a, b, done){
+//            setTimeout(function (){
+//                console.log(a, b, 22222)
+//                done()
+//            }, 2000)
+//        })
+//        .done(function (){
+//            console.log('done')
+//        })
+
+    var async = Mid('async')
+
+    async
+        .use(function (done){
+                console.log(11111)
+            setTimeout(function (){
+                done()
+            }, 2000)
+        })
+        .use(function (done){
+                console.log(222222)
+            setTimeout(function (){
+                done()
+            }, 2200)
+        })
+        .done(function (counts){
+            console.log('counts', counts)
+        })
+
+</script>
