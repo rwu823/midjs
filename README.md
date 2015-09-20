@@ -58,10 +58,13 @@ mid('async')
 ```
 
 ## API
-## mid(['async'|'sync'])
+
+### mid(['async'|'sync'])
 set run `use` functions as `async` or `sync`
-### use([function])
+
+### use([function(...args, next)])
 process functions for `async` or `sync`.
+The behavior like [Express.js](http://expressjs.com/guide/using-middleware.html) middleware.
 
 ### done([function])
 invoking when ecah processes done.
