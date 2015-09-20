@@ -61,7 +61,7 @@ mid('async')
 ## mid(['async'|'sync'])
 set run `use` functions as `async` or `sync`
 ### use([function])
-process functions for `async` or `ssync`.
+process functions for `async` or `sync`.
 
 ### done([function])
 invoking when ecah processes done.
