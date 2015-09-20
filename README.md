@@ -1,6 +1,6 @@
 # mid.js
 
-A lightweight flow control for Node and Browsers. Similar to [async.js](https://github.com/caolan/async) but have more than enjoyable API :).
+A lightweight flow control for Node and Browsers. Similar to [async.js](https://github.com/caolan/async) but more than enjoyable API :).
 
 ## Installation
 	npm install mid.js --save
