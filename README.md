@@ -65,17 +65,17 @@ in loop:
 
 ```js
 var mid = require('../mid')
-var async = mid('async')
+var masync = mid('async')
 
 for(var i = 0; i < 2; i++){
-    async.use(function(done){
+    masync.use(function(done){
         setTimeout(function (){
             done()
         }, 1000)
     })
 }
 
-async.once(function (){
+masync.once(function (){
     console.log('done')
 })
 ```
